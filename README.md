@@ -1,10 +1,12 @@
 # Zerious Zoccer Zone Project
 
+This was the final project in the SQL course I took a while ago. I worked together with a team to build a database, tables, and sample data. 
+
 ## Introduction
 
 **SITUATION**
 
-This was the final project in my first SQL class I took. This project revolves around a soccer equipment store, named Zerious Zoccer Zone. The store business is rapidly growing, and hires our consulting team to create a centralized database in order to handle incoming information. They have certain requirements regarding order placing, inventory tracking, and customer information records. 
+This project revolves around a soccer equipment store, named Zerious Zoccer Zone. The store's business is rapidly growing, and they have hired our consulting team to create a centralized database in order to meet the increasing demands. They have certain requirements regarding order placing, inventory tracking, and customer information records. 
 
 **BRIEF**
 
