@@ -70,6 +70,20 @@ FROM z_complaint c JOIN z_sales_rep s ON (c.rep_id = s.id))
 ```
 This query would yield the following:
 
+<img width="1000" img height="100" alt="image" src="https://user-images.githubusercontent.com/120063554/206932549-fd26d528-e549-4acc-bbfe-3bc91d475d1e.png">
 
+## Recommendations
+
+We have successfully created a centralized database along with logical relationships and tables. However, there is always room for improvement. We have accomplished the main objective, but we believe there are some points we can add or improve upon. To further increase functionality, we would recommend the following:
+
+- Increase the scope of complaints to the individual level
+- Include the ability to pre-order items for a certain date
+- Institute a membership option with special deals and sales
+- Create an item menu and a promotional menu
+- A commission bonus for sales reps that net bigger payouts
+
+## Conclusion
+
+Our consulting team has successfully implemented a comprehensive database that keeps track of orders, customers, historical data, and much more. Our database will allow Zerious Zoccer Zone to meet the increased logistical demands of the growing soccer industry and the increasing popularity. 
 
 
