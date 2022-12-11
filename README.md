@@ -50,6 +50,7 @@ REP_ID NUMBER(10,0),
 PRIMARY KEY(ID)
 )
 ```
+Screenshots of the tables are provided below:
 
 
 <img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206881857-4459cda0-60bb-4220-b277-e391a789b4f5.png">
