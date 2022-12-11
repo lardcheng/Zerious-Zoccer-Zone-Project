@@ -52,11 +52,24 @@ PRIMARY KEY(ID)
 ```
 Screenshots of the tables are provided below:
 
+<img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206932225-b49d3385-af2c-4505-9903-63d9ac40b98a.png">
 
-<img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206881857-4459cda0-60bb-4220-b277-e391a789b4f5.png">
+<img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206932229-a01b7834-797f-47dd-abd8-24c3dfc9d76a.png">
 
+<img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206932232-53a32a72-e024-4b9f-ad49-a96494f1d2a8.png">
 
-## Visualization
+<img width="1000" img height="250" alt="image" src="https://user-images.githubusercontent.com/120063554/206932234-95e796a6-ced0-4f47-ac4b-dbc534cf97fa.png">
+
+## Query Testing
+
+After creating these tables and populating with sample data, we perform a quick query test to ensure that data is being pulled correctly. For example, we could write the following code if we were curious to see the status of complaints and which sales rep is handling it:
+
+```sql
+SELECT c.description, c.status, s.first_name|| ' ' || s.last_name "Sales Rep"
+FROM z_complaint c JOIN z_sales_rep s ON (c.rep_id = s.id))
+```
+This query would yield the following:
+
 
 
 
