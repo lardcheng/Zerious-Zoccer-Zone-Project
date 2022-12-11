@@ -30,43 +30,32 @@ Zerious Zoccer Zones has certain requirements that need to be met. They have lis
  
 ## Entity Relationship Diagram
 
+After reviewing the business requirements, we had to create an ERD in order to see what how everything related. In the end, we came up with the following connections:
 
+<img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206929052-e0fa24bc-608a-4ce4-ae83-e8e3a3603f8f.png">
 
-## Data Cleanup
+## Table Setup
 
-Next step, I decided to practice with SQL. I created a table with columns that I thought I needed. Then, I combined the two box office sources into one file in Excel, and imported the data into SQL through a bulk insert. The code and results for these steps are provided below:
+Once we had identified all the relationships and tables we needed, we had to create the tables and populate them with sample data. These tables were created in Oracle SQL Developer. 
+
+For example, one table we created was for the clubs, named Z_CLUB. The code for creation is below:
 
 ```sql
-CREATE TABLE MCU (
-ID int IDENTITY(1,1) PRIMARY KEY,
-Title varchar(200),
-Director varchar(200),
-ReleaseDate date,
-Budget bigint,
-OpeningWeekend bigint,
-DomesticBoxOffice bigint,
-WorldwideBoxOffice bigint,
-OpeningTheaters bigint,
-Distributor varchar(200)
+CREATE TABLE Z_CLUB (
+ID NUMBER (10,0),
+CLUB_NAME VARCHAR2(50),
+TEAM_NUMBER NUMBER(20,0),
+MEMBER_NUMBER NUMBER(20,0),
+REP_ID NUMBER(10,0),
+PRIMARY KEY(ID)
 )
-
-BULK INSERT MCU
-FROM 'C:\Users\larry\Desktop\Projects\MCU1.csv'
-WITH (FIRSTROW = 2,
-    FIELDTERMINATOR = ',',
-    ROWTERMINATOR='\n',
-    BATCHSIZE=250000,
-    MAXERRORS=2);
-
-SELECT *
-FROM MCU
 ```
+
 
 <img width="1000" img height="500" alt="image" src="https://user-images.githubusercontent.com/120063554/206881857-4459cda0-60bb-4220-b277-e391a789b4f5.png">
 
-The next step was to connect all my data sources to Power BI. From the Wikipedia source, I imported the critical reception, Infinity Saga, and Multiverse Saga tables. 
 
 ## Visualization
 
-After connecting all the data sources to Power BI, I had to make a few edits to the tables I needed. First, I created one large table, named "All Phases", by combining the "Infinity Saga" and "Multiverse Saga" tables from the Wikipedia source. Then, I made a 1:1 connection between the "All Phases" table and the critical reception table and SQL table. Once these connections were made, all I had to do was create a few measures and begin visualization. Feel free to check out the dashboard on my Notion page!
+
 
